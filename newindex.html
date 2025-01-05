@@ -5,6 +5,7 @@
         <link rel = "stylesheet" href = "css/test.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');</style>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -14,30 +15,89 @@
             <div class="star" style="background-image: url('lavender/stars/3.png');"></div>
             <div class="star" style="background-image: url('lavender/stars/4.png');"></div>
             <div class="star" style="background-image: url('lavender/stars/5.png');"></div>
-            <div class="lavender" style="background-image: url('lavender/all.png');"></div>
-            <div class="text-overlay dm-serif-display-regular-italic" id="typewriter"></div>
-            <div class="text-overlay dm-serif-display-regular-italic" id="fadeElement"></div>
+            <div class="lavender" style="background-image: url('sky.png');"></div>
+            <div id="coverinfo">
+                <div class="text-overlay dm-serif-display-regular-italic" id="typewriter"></div>
+                <div class="text-overlay dm-serif-display-regular-italic" id="fadeElement"></div>
+                <div class="buttons-container">
+                </div>
+            </div>
         </section>
 
-        <div class="aboutme">
-            <div class= "dm-serif-display-regular" style="text-align: center;">
-                <br>
-                <br>
-                <h2>About Me</h2>
-                <div id="intro">
-                    <img src="headshot.png" alt="headshot">
-                    <p id="textin">Hello, I'm Grace. I'm an aspiring software engineer pursuing a BS in Computer Science at Northwestern University. I love building innovative solutions by combining my creativity and technical skills to bring ideas to life. </p>
-
-                </div>
-                <br>
-                <br>
-                <h2>My Projects</h2>
-                <h2>My Skills</h2>
-                <h2>My Experience</h2>
-                <h2>My Education</h2>
-                <h2>Contact Me</h2>
+        <div id="introbg" class= "dm-serif-display-regular";">
+            <br>
+            <br>
+            <div id="intro">
+                <img src="headshot.png" alt="headshot">
+                <p>Hello, I'm Grace. I'm an aspiring software engineer pursuing a BS in Computer Science at Northwestern University. I love building innovative solutions by combining my creativity and technical skills to bring ideas to life. </p>
             </div>
+            <br>
+            <br>
         </div>
+        <!-- <div style="background: transparent;"> -->
+        <section id="projects">
+            <br>
+            <br>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Recipe Generator App</h3>
+                    <p>Made with:
+                        <span class="tech-icons" style="background-image: url('icons/aws.png');"></span>
+                        <span class="tech-icons" style="background-image: url('icons/python.png');"></span>
+                        <span class="tech-icons" style="background-image: url('icons/sql.png');"></span>
+                        <span class="tech-icons" style="background-image: url('icons/mysql.png');"></span>
+                    <p> A serverless application that fetches recipes from a public API and filters them based on user-specified allergies, providing personalized results. Users can also request the estimated grocery cost of a specific recipe and also conveniently download recipe PDF's to their local devices.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn demo-btn">Demo</a>
+                        <a href="#" class="btn github-btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="recipeapp.png" alt="Recipe Generator App">
+                </div>
+            </div>  
+
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>CTA Bus Stop Finder</h3>
+                    <p>Made with:
+                        <span class="tech-icons" style="background-image: url('icons/C++.png');"></span>
+                        <span class="tech-icons" style="background-image: url('icons/vscode.png');"></span></p>
+                    <p>description hihihiihihi</p>
+                    <div class="buttons">
+                        <a href="#" class="btn demo-btn">Demo</a>
+                        <a href="#" class="btn github-btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="recipeapp.png" alt="CTA Bus Stop Finder">
+                </div>
+            </div>  
+
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Amoonguss Pizzeria Simulation</h3>
+                    <p>Made with:
+                        <span class="tech-icons" style="background-image: url('icons/unity.png');"></span>
+                        <span class="tech-icons" style="background-image: url('icons/csharp.png');"></span>
+                        <span class="tech-icons" style="background-image: url('icons/photoshop.png');"></span></p>
+                    <p>Recipe generating thingy majiggy</p>
+                    <div class="buttons">
+                        <a href="#" class="btn demo-btn">Demo</a>
+                        <a href="#" class="btn github-btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="recipeapp.png" alt="Recipe Generator App">
+                </div>
+            </div>  
+
+        <button style="background: url(icons/linkedin.png)"></button>
+        <button style="background: url(icons/github.png)"></button>
+        </section>
 
         <script src="js/test.js"></script>
     </body>

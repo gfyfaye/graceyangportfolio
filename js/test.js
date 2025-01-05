@@ -31,7 +31,7 @@ const typewriterElement = document.querySelector("#typewriter");
 const fadeElement = document.querySelector("#fadeElement");
 
 typewriter = () => {
-    typewriterElement.innerHTML = messageArray[0].substring(0, textPosition) + "<span>\u25ae</span>";
+    typewriterElement.innerHTML = messageArray[0].substring(0, textPosition) + "<span class='blinking'>\u25ae</span>";
 
     if (textPosition++ != messageArray[0].length) {
         setTimeout(typewriter, speed);}

@@ -4,9 +4,14 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
+    background-image: url('../lavender/background2/skyandbirds.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-attachment: fixed; /* Fix the background image */
+    background-position: center; /* Center the image */
+
 }
 
-section{
+#cover{
     width: 100vw;
     height: 100vh; 
     background-image: url('../lavender/sky.png');
@@ -15,14 +20,14 @@ section{
     background-size: cover;
     position: relative;
 }
-section::before {
+#cover::before {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, black, transparent);
-    z-index: 10000;
+    height: 18%;
+    background: linear-gradient(to top, #AE99BC, transparent);
+    z-index: 3;
 }
 .star{
     width: 100%;
@@ -36,6 +41,44 @@ section::before {
     position: absolute; /* overlap #cover */
     z-index: 1;
 }
+
+#coverinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */ 
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 10000;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    vertical-align: middle;
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    background-color: #388e3c; /* Even darker green when active */
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
 .dm-serif-display-regular {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -45,7 +88,6 @@ section::before {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: italic;}
-
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -67,7 +109,7 @@ section::before {
 }
 
 /* blinking cursor */
-span{
+.blinking {
     animation: blinker 1s linear infinite;
 }
 
@@ -78,34 +120,88 @@ span{
 }
 
 /* About Me */
-
-.aboutme{
-    position: relative;
-    background-color: black;
-    color: white;
-    padding: 50px;
-    overflow: hidden;
-    min-height: 300px;
-    z-index: 0;
-}
-
-.aboutme h2{
-    font-size: 6em;
-    position: relative;
-    z-index: 2;
-}
-.aboutme p{
-    font-size: 2em;
-    position: relative;
-    z-index: 2;
-}
-
-
-.aboutme img {
-    width:400px;
-    height:400px;
+#introbg {
+    background: #AE99BC;
 }
 
 #intro{
     display: flex;
+    color: #F8F5E9;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 65vh;
+    width: 70%;
+}
+#intro p{
+    margin: 100px auto;
+    padding: 35px;
+    font-size: 2em;
+    font-weight: 100px;
+    position: relative;
+}
+#intro img {
+    width:300px;
+    height:300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 150px;
+}
+#projects {
+    position: relative;
+    background: white;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #F2F4F3;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Space between cards */
+    width: 50%; /* Limit card width */
+    padding: 30px;
+    gap: 20px;
+}
+.project-content {
+    flex: 1;
+}
+
+.project-content h3 {
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-size: 3em;
+}
+.project-content p {
+    font-family: "Ubuntu", serif;
+    font-style: regular;
+    font-weight: 300;
+    font-size: 1.5em;
+    width: 70%;
+}
+
+/* For project images */
+.project-image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.tech-icons {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    vertical-align: middle;
 }
