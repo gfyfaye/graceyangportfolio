@@ -1,0 +1,111 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+section{
+    width: 100vw;
+    height: 100vh; 
+    background-image: url('../lavender/sky.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, black, transparent);
+    z-index: 10000;
+}
+.star{
+    width: 100%;
+    height: 100%;
+    position: absolute; /* overlap #cover */
+    z-index: 2;
+}
+.lavender{
+    width: 100%;
+    height: 100%;
+    position: absolute; /* overlap #cover */
+    z-index: 1;
+}
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;}
+  
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+#typewriter {
+    transform: translate(-50%, -120%);
+    color: white;
+    font-size: 5em;
+    font-weight: bold;
+}
+#fadeElement {
+    transform: translate(-50%, -30%);
+    color: white;
+    font-size: 2.5em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* blinking cursor */
+span{
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
+
+/* About Me */
+
+.aboutme{
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    overflow: hidden;
+    min-height: 300px;
+    z-index: 0;
+}
+
+.aboutme h2{
+    font-size: 6em;
+    position: relative;
+    z-index: 2;
+}
+.aboutme p{
+    font-size: 2em;
+    position: relative;
+    z-index: 2;
+}
+
+
+.aboutme img {
+    width:400px;
+    height:400px;
+}
+
+#intro{
+    display: flex;
+}

@@ -1,0 +1,46 @@
+[debug] [2024-07-31T21:52:10.131Z] ----------------------------------------------------------------------
+[debug] [2024-07-31T21:52:10.135Z] Command:       /Users/gracefayeyang/.nvm/versions/node/v20.16.0/bin/node /Users/gracefayeyang/.nvm/versions/node/v20.16.0/bin/firebase init
+[debug] [2024-07-31T21:52:10.135Z] CLI Version:   13.14.2
+[debug] [2024-07-31T21:52:10.136Z] Platform:      darwin
+[debug] [2024-07-31T21:52:10.136Z] Node Version:  v20.16.0
+[debug] [2024-07-31T21:52:10.136Z] Time:          Wed Jul 31 2024 14:52:10 GMT-0700 (Pacific Daylight Time)
+[debug] [2024-07-31T21:52:10.136Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-31T21:52:10.139Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-31T21:52:10.140Z] > authorizing via signed-in user (yanggracefaye@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/gracefayeyang/Documents/Github/artgallery
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-07-31T21:53:02.606Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-07-31T21:53:02.606Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"gracegallery","name":"gracegallery"}
+[debug] [2024-07-31T21:53:03.264Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-07-31T21:53:03.264Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6800221591817323660"}
+[debug] [2024-07-31T21:53:03.265Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6800221591817323660 [none]
+[debug] [2024-07-31T21:53:03.768Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6800221591817323660 200
+[debug] [2024-07-31T21:53:03.768Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6800221591817323660 {"name":"operations/cp.6800221591817323660","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2024-07-31T21:53:03.955Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (/Users/gracefayeyang/.nvm/versions/node/v20.16.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/Users/gracefayeyang/.nvm/versions/node/v20.16.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/Users/gracefayeyang/.nvm/versions/node/v20.16.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/Users/gracefayeyang/.nvm/versions/node/v20.16.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/Users/gracefayeyang/.nvm/versions/node/v20.16.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/Users/gracefayeyang/.nvm/versions/node/v20.16.0/lib/node_modules/firebase-tools/lib/init/index.js:40:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.

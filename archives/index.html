@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device=width, initial-scale = 1.0">
+        <title> Home </title>
+        <!-- fontawesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- bootstrap css -->
+        <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/main.css">
+    </head>
+    <body>
+       
+       <!-- header -->
+       <header id = "header" class = "vh-100 carousel slide"  data-b-ride = "carousel" style = "padding-top: 104px;">
+            <div class = "container h-100 d-flex align-items-center carousel-inner">
+                <div class = "text-center carousel-item active">
+                <h2 class = "fa fa-moon text-white"></h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">Grace's Gallery</h1>
+                </div>
+                
+                <div class = "text-center carousel-item">
+                    <h2 class = "text-white"> also see my </h2>
+                    <h1 class = "text-uppercase py-2 fw-bold text-white">TikTok</h1>
+                    <a href = "https://www.tiktok.com/@gfyfayee" class = "btn mn-3 text-uppercase">GO</a>
+                    </div>
+            </div>
+
+            <button class = "carousel-control-prev" type = "button" data-bs-target = "#header" data-bs-slide = "prev">
+                <span class = "carousel-control-prev-icon"></span>
+            </button>
+            
+            <button class = "carousel-control-next" type = "button" data-bs-target = "#header" data-bs-slide = "next">
+                <span class = "carousel-control-next-icon"></span>
+            </button>
+        </header>
+        <!-- end of header -->
+
+                <!-- about me -->
+                <section id = "about" class = "py-5">
+            <div class = "container">
+                <div class = "row gy-lg-4 align-items-center">
+                    <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                        <div class = "title pt-3 pb-5">
+                            <h2 class = "position-relative d-inline-block ms-4">About Me</h2>
+                        </div>
+                        <p class = "lead text-muted">Hi, I'm Grace </p>
+                        <p class = "lead text-muted">I'm a Computer Science student at Northwestern University from Bellevue, Washington.</p>
+                        <p class = "lead text-muted">Beyond my passion for technology, I also express my creativity through sculpture and jewelry-making. </p>
+                        <p class = "lead text-muted">Here are some of my pieces! </p>
+                        <i class = "fa fa-heart"></i>
+                        <p></p>
+                    </div>
+                    <div class = "col-lg-6 order-lg-0">
+                        <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/aboutme.jpeg" alt = "" class = "img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about me -->
+
+        <!-- collection -->
+        <section id = "collection" class = "py-5">
+            <div class = "container">
+                <div class = "title text-center">
+                    <h2 class = "position-relative d-inline-block">Collection</h2>
+                </div>
+
+                <div class = "row g-0">
+                    <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                        <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                        <button type = "button" class = "btn m-2 text-dark" data-filter = ".featured">Featured</button>
+                        <button type = "button" class = "btn m-2 text-dark" data-filter = ".sky">Sky COTL</button>
+                        <button type = "button" class = "btn m-2 text-dark" data-filter = ".charms">Charms</button>
+                        <button type = "button" class = "btn m-2 text-dark" data-filter = ".jewelry">Jewelry</button>
+                    </div>
+                   
+                    <div class = "collection-list mt-4 row gx-0 gy-3">
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/blossomskykid.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">cherry blossom kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/pb.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">pink care bear</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 jewelry">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/sushiearrings.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">sushi earrings</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/redcustomskykid.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">lion dance kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 featured">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/bluedragon.jpg" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">blue dragon</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/koifishkeychains.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">koi fish charms</p>
+                            </div>
+                        </div>
+                        
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 jewelry">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/tulipearring.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">tulip earrings</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/turtleinashell.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">turtle in a shell</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/scavengercustomskykid.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">scavanger kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/bluecapeskykid.jpg" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">blue cape kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/redbowandcapeskykid.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">red bow kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 jewelry charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/bearcookieearrings.jpg" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">bear cookie earrings</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 featured">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/xltitan.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">colossal titan</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/resinboba.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">rainbow boba</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/littlefoxcustomskykidback.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">foxy kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/foxfacecustomskykid.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">foxface kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 jewelry">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/blossombracelet.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">blossom bracelet</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/princecustomskykidback.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">red prince kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/cakedisplay.jpg" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">cafe cakes</p>
+                            </div>
+                        </div>
+                        
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 featured">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/seamonster.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">sea monster head</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 jewelry">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/flowerbeadearrings.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">flower earrings</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/darkflowercustomskykid.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">dark flower kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 featured">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/purpledragon.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">purple dragon</p>
+                            </div>
+                        </div> 
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 jewelry">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/orchidearrings.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">orchid earrings</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/greencustomskykid.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">spike-hair kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/icecreambear.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">sorbet bears</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/rainbowdragon.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">rainbow dragon</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/auroracustomskykid.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">Aurora kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/cactus.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">cactus pot</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/pixiegirlandbunnie.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">pixie girl & bunny</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sky">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/twotonecustomskykidback.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">two-tone kid from Sky: COTL</p>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 charms">
+                            <div class = "special-img position-relative overflow-hidden">
+                                <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/coralturtle.png" class = "w-100">
+                            </div>
+                            <div class = "text-center">
+                                <p class = "text-captialize my-1">coral reef turtle</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of collection -->
+
+        <!-- popular -->
+        <section id = "popular" class = "py-5">
+            <div class = "container">
+                <div class = "title text-center pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Highlights Of This Year</h2>
+                </div>
+
+                <div class = "row" id="">
+                    <div class = "col-md-6 col-lg-4 row g-3">
+                        <h3 class = "fs-5">Best Selling</h3>
+                        <div class = "d-flex align-items-start justify-content-start">
+                            <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/blossomskykid.png" alt = "" class = "img-fluid pe-3 w-25">
+                            <div>
+                                <p class = "mb-0">cherry blossom kid from Sky: COTL</p>
+                            </div>
+                        </div>
+                        <div class = "d-flex align-items-start justify-content-start">
+                            <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/bluecapeskykid.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                            <div>
+                                <p class = "mb-0">blue cape kid from Sky: COTL</p>
+                            </div>
+                        </div>
+                        <div class = "d-flex align-items-start justify-content-start">
+                            <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/tulipearring.png" alt = "" class = "img-fluid pe-3 w-25">
+                            <div>
+                                <p class = "mb-0">tulip earrings</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 row g-3">
+                        <h3 class = "fs-5">My Favorites</h3>
+                        <div class = "d-flex align-items-start justify-content-start">
+                            <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/pb.png" alt = "" class = "img-fluid pe-3 w-25">
+                            <div>
+                                <p class = "mb-0">pink care bear</p>
+                            </div>
+                        </div>
+                        <div class = "d-flex align-items-start justify-content-start">
+                            <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/tulipearring.png" alt = "" class = "img-fluid pe-3 w-25">
+                            <div>
+                                <p class = "mb-0">tulip earrings</p>
+                            </div>
+                        </div>
+                        <div class = "d-flex align-items-start justify-content-start">
+                            <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/princecustomskykidback.png" alt = "" class = "img-fluid pe-3 w-25">
+                            <div>
+                                <p class = "mb-0">red prince kid from Sky: COTL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 row g-3">
+                        <h3 class = "fs-5">Most Unique</h3>
+                        <div class = "d-flex align-items-start justify-content-start">
+                            <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/seamonster.png" alt = "" class = "img-fluid pe-3 w-25">
+                            <div>
+                                <p class = "mb-0">sea monster</p>
+                            </div>
+                        </div>
+                        <div class = "d-flex align-items-start justify-content-start">
+                            <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/xltitan.png" alt = "" class = "img-fluid pe-3 w-25">
+                            <div>
+                                <p class = "mb-0">colossal titan</p>
+                            </div>
+                        </div>
+                        <div class = "d-flex align-items-start justify-content-start">
+                            <img src = "https://gracegallery.s3.us-east-2.amazonaws.com/turtleinashell.png" alt = "" class = "img-fluid pe-3 w-25">
+                            <div>
+                                <p class = "mb-0">turtle in a shell</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of popular -->
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-3 justify-content-center">
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Me
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Highlights
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Contact Me</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            gracetherandomgrape@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fab fa-instagram"></i>
+                        </span>
+                        <span class = "fw-light">
+                            graciefluff.clay
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Me</h5>
+                    <div>
+                        <ul class = "list-unstyled justify-content-center d-flex">
+                            <li>
+                                <a href = "https://www.instagram.com/gfyfaye.clay/" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://www.youtube.com/channel/UCzlxfZLildRu6nbY0rnYK6Q" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://www.tiktok.com/@gfyfayee" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-tiktok"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+       
+        <!-- jquery -->
+        <script src = "js/jquery-3.7.1.js"></script>
+         <!-- isotope js -->
+         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <!-- bootstrap js -->
+        <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <!-- custom js -->
+        <script src = "js/script.js"></script>
+    </body>
+</html>
