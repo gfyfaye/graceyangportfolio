@@ -9,20 +9,33 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     </head>
     <body>
+        
+        <nav id="navbar">
+            <ul>
+                <li><a href="#introbg">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+
         <section id="cover">
             <div class="star" style="background-image: url('lavender/stars/1.png');"></div>
             <div class="star" style="background-image: url('lavender/stars/2.png');"></div>
             <div class="star" style="background-image: url('lavender/stars/3.png');"></div>
             <div class="star" style="background-image: url('lavender/stars/4.png');"></div>
             <div class="star" style="background-image: url('lavender/stars/5.png');"></div>
-            <div class="lavender" style="background-image: url('sky.png');"></div>
             <div id="coverinfo">
                 <div class="text-overlay dm-serif-display-regular-italic" id="typewriter"></div>
                 <div class="text-overlay dm-serif-display-regular-italic" id="fadeElement"></div>
                 <div class="buttons-container">
+                    <a href="https://github.com/gfyfaye" class="btn" id="GithubButton" style="background-image: url('icons/whitegithub.png');"></a>
+                    <a href="https://www.linkedin.com/in/grace-faye-yang" class="btn" id="LinkedInButton" style="background-image: url('icons/whitelinkedin.png');"></a>
                 </div>
             </div>
         </section>
+
+
 
         <div id="introbg" class= "dm-serif-display-regular";">
             <br>
@@ -36,8 +49,8 @@
         </div>
         <!-- <div style="background: transparent;"> -->
         <section id="projects">
-            <br>
-            <br>
+            <h1>My Projects</h1>
+
 
             <div class="project-card">
                 <div class="project-content">
@@ -48,13 +61,11 @@
                         <span class="tech-icons" style="background-image: url('icons/sql.png');"></span>
                         <span class="tech-icons" style="background-image: url('icons/mysql.png');"></span>
                     <p> A serverless application that fetches recipes from a public API and filters them based on user-specified allergies, providing personalized results. Users can also request the estimated grocery cost of a specific recipe and also conveniently download recipe PDF's to their local devices.</p>
-                    <div class="buttons">
-                        <a href="#" class="btn demo-btn">Demo</a>
-                        <a href="#" class="btn github-btn">GitHub</a>
-                    </div>
+                        <a href="https://www.youtube.com/watch?v=Jb7doRJbT4Q&feature=youtu.be" class="project-btn">Demo</a>
+                        <a href="https://github.com/gfyfaye/recipeapp" class="project-btn">GitHub</a>
                 </div>
                 <div class="project-image">
-                    <img src="recipeapp.png" alt="Recipe Generator App">
+                    <img src="recipeapp2.png" alt="Recipe Generator App">
                 </div>
             </div>  
 
@@ -65,38 +76,129 @@
                     <p>Made with:
                         <span class="tech-icons" style="background-image: url('icons/C++.png');"></span>
                         <span class="tech-icons" style="background-image: url('icons/vscode.png');"></span></p>
-                    <p>description hihihiihihi</p>
-                    <div class="buttons">
-                        <a href="#" class="btn demo-btn">Demo</a>
-                        <a href="#" class="btn github-btn">GitHub</a>
-                    </div>
+                    <p>An application that allows users at Northwestern University to search for the nearest CTA bus stop based on university building names. Users are also able to view real-time predictions for bus arrival times at those stops.</p>
+                        <a href="https://www.google.com/url?q=https://github.com/gfyfaye/busstopapp&sa=D&source=docs&ust=1736274788611732&usg=AOvVaw07g0penLlMPZ2mj5xdlWZn" class="project-btn">GitHub</a>
                 </div>
                 <div class="project-image">
-                    <img src="recipeapp.png" alt="CTA Bus Stop Finder">
+                    <img src="busstopapp.png" alt="CTA Bus Stop Finder">
                 </div>
             </div>  
 
 
             <div class="project-card">
                 <div class="project-content">
-                    <h3>Amoonguss Pizzeria Simulation</h3>
+                    <h3>Pizzeria Simulation</h3>
                     <p>Made with:
                         <span class="tech-icons" style="background-image: url('icons/unity.png');"></span>
                         <span class="tech-icons" style="background-image: url('icons/csharp.png');"></span>
                         <span class="tech-icons" style="background-image: url('icons/photoshop.png');"></span></p>
-                    <p>Recipe generating thingy majiggy</p>
-                    <div class="buttons">
-                        <a href="#" class="btn demo-btn">Demo</a>
-                        <a href="#" class="btn github-btn">GitHub</a>
-                    </div>
+                    <p>A prototype pizzeria game where users simulate working in a pizzeria and assemble pizzas according to the customer's requirements. Pizzas are graded on aesthetic and topping accuracy through an algorithm and the user is rewarded with in-game currency based on their score.</p>
+                        <a href="https://github.com/gfyfaye/FinalPizzariaRepository" class="project-btn">Github</a>
                 </div>
                 <div class="project-image">
-                    <img src="recipeapp.png" alt="Recipe Generator App">
+                    <img src="pizzeria.png" alt="Amoonguss Pizzeria">
                 </div>
             </div>  
+        </section>
 
-        <button style="background: url(icons/linkedin.png)"></button>
-        <button style="background: url(icons/github.png)"></button>
+
+        <section id="skills">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1>My Skills</h1>
+            <div class="skill-row">
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/java.png');"></a>
+                    <div class="skill-title">Java</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/python.png');"></a>
+                    <div class="skill-title">Python</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/c.png');"></a>
+                    <div class="skill-title">C</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/C++.png');"></a>
+                    <div class="skill-title">C++</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/linux.png');"></a>
+                    <div class="skill-title">Linux</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/javascript.png');"></a>
+                    <div class="skill-title">Javascript</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/python.png');"></a>
+                    <div class="skill-title">Python</div>
+                </div>
+            </div>
+            <div class="skill-row">
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/aws.png');"></a>
+                    <div class="skill-title">AWS</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/x86.png');"></a>
+                    <div class="skill-title">x86 Assembly</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/html.png');"></a>
+                    <div class="skill-title">HTML</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/css.png');"></a>
+                    <div class="skill-title">CSS</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/sql.png');"></a>
+                    <div class="skill-title">SQL</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/react.png');"></a>
+                    <div class="skill-title">React</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/node.png');"></a>
+                    <div class="skill-title">Node.js</div>
+                </div>
+            </div>
+            <div class="skill-row">
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/unity.png');"></a>
+                    <div class="skill-title">Unity</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/csharp.png');"></a>
+                    <div class="skill-title">C#</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/redis.png');"></a>
+                    <div class="skill-title">Redis</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/flask.png');"></a>
+                    <div class="skill-title">Flask</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/xcode.png');"></a>
+                    <div class="skill-title">Xcode</div>
+                </div>
+                <div class="skill-duo">
+                    <a class="skill-icon" style="background-image: url('icons/photoshop.png');"></a>
+                    <div class="skill-title">Photoshop</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="resume">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1>View My Resume</h1>
+            <button class="resume-button" onclick="openResume()">Resume</button>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
         </section>
 
         <script src="js/test.js"></script>

@@ -4,12 +4,64 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
-    background-image: url('../lavender/background2/skyandbirds.png');
     background-size: cover; /* Cover the entire viewport */
     background-attachment: fixed; /* Fix the background image */
     background-position: center; /* Center the image */
 
 }
+
+h1 {
+    text-align: center;
+    margin: 4% auto;
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the navbar items horizontally */
+    align-items: center;
+    top: 20px;
+    width: 100%;
+    color: white;
+    z-index: 1000;
+    
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 20px;
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 20px;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #F8F5E9; /* Dark text */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #937DAF; /* Slightly darker text on hover */
+}
+
+
 
 #cover{
     width: 100vw;
@@ -50,34 +102,37 @@ body {
 }
 
 .buttons-container {
+    position: absolute;
+    top: 60%; /* Adjust this value to move buttons up or down */
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    z-index: 10000;
+    gap: 20px; /* Space between buttons */
 }
 
-.button {
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
-    background-size: 100px 100px;
-    vertical-align: middle;
 }
 
-.button:hover {
-    background-color: #45a049; /* Darker green on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+.btn:hover {
+    opacity: 0;
 }
 
-.button:active {
-    background-color: #388e3c; /* Even darker green when active */
-    transform: scale(0.95); /* Slightly shrink on click */
+.btn:active {
+    transform: scale(1); /* Resets scale when clicked */
 }
+
 
 .dm-serif-display-regular {
     font-family: "DM Serif Display", serif;
@@ -170,9 +225,13 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto; /* Space between cards */
-    width: 50%; /* Limit card width */
-    padding: 30px;
+    width: 60%; /* Limit card width */
+    padding: 40px;
     gap: 20px;
+}
+
+.project-card:hover {
+    background-color: #E6E8E7;
 }
 .project-content {
     flex: 1;
@@ -204,4 +263,86 @@ body {
     height: 50px;
     background-size: 50px 50px;
     vertical-align: middle;
+}
+
+.project-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: "Ubuntu", serif;
+    color: #666666;
+    border: 2px solid #666666;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.project-btn:hover { 
+    transform: scale(1.1);
+}
+
+.project-btn:active {
+    transform: scale(0.9);
+}
+
+
+#skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.skill-duo {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-duo:hover {
+    scale: 1.1;
+}
+
+.skill-icon {
+    width: 90px;
+    height: 90px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.skill-title {
+    font-size: 16px;
+    left: 50%;
+    font-family: "Ubuntu", serif;
+    text-align: center;
+    color: #666666;
+  }
+.resume-button {
+    background-color: #937DAF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Ubuntu", serif;
+    font-size: 2em;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.resume-button:hover {
+    background-color: #846D9E;
+}
+.resume-button:active {
+    background-color:#937DAF;
 }
