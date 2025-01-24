@@ -19,8 +19,6 @@ function startTwinkling() {
 startTwinkling();
 
 
-
-
 //typewriter animation
 
 var messageArray = ["Grace Yang"];
@@ -58,3 +56,19 @@ const resumebutton = document.querySelector("#resume-button")
 function openResume() {
     window.open('resume.pdf', '_blank');
   }
+
+const navbartexts = document.querySelectorAll('.navbartext');
+
+function handleScrollColor(){
+    navbartexts.forEach(navbar => {
+        if (window.scrollY > 1600) {
+            navbar.classList.add('scrolled');
+            //navbar.style.color = '#937DAF';
+        } else {
+            navbar.classList.remove('scrolled');
+            //navbar.style.color = 'white';
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScrollColor);
