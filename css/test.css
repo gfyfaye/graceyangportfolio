@@ -69,7 +69,8 @@ h1 {
 }
 
 .navbartext:hover {
-    color: #937DAF;
+    color: hsl(266, 40%, 31%);
+    
 }
   /* Scrolled state */
 .navbartext.scrolled{
@@ -78,7 +79,7 @@ h1 {
 
 /* Hover state for scrolled navbar */
 .navbartext.scrolled:hover {
-    color: #846D9E;
+    color: hsl(266, 40%, 31%);
 }
 
 /***COVER***/
@@ -125,21 +126,20 @@ h1 {
 
 .buttons-container {
     position: absolute;
-    top: 60%; /* Adjust this value to move buttons up or down */
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
     display: flex;
-    gap: 20px; /* Space between buttons */
+    gap: 20px;
 }
 
-.btn {
+.coverbtn {
     display: inline-block;
     padding: 10px 20px;
-    width: 30px;
-    height: 30px;
-    font-size: 1.2em;
+    width: 45px;
+    height: 45px;
     opacity: 0;
-    pointer-events: none;
     transition: opacity 1s ease-in-out;
     background-size:contain;
     background-repeat: no-repeat;
@@ -147,14 +147,9 @@ h1 {
     cursor: pointer;
 }
 
-.btn:hover {
-    opacity: 0;
+.coverbtn:hover {
+    transform: scale(1.1);
 }
-
-.btn:active {
-    transform: scale(1);
-}
-
 
 .dm-serif-display-regular {
     font-family: "DM Serif Display", serif;

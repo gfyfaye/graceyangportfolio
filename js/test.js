@@ -27,8 +27,9 @@ var textPosition = 0;
 var speed = 150;
 const typewriterElement = document.querySelector("#typewriter");
 const fadeElement = document.querySelector("#fadeElement");
-const fadeButton1 = document.getElementById("GithubButton");
-const fadeButton2 = document.getElementById("LinkedInButton");
+// const fadeButton1 = document.getElementById("GithubButton");
+// const fadeButton2 = document.getElementById("LinkedInButton");
+const coverButtons = document.querySelectorAll(".coverbtn");
 
 typewriter = () => {
     typewriterElement.innerHTML = messageArray[0].substring(0, textPosition) + "<span class='blinking'>\u25ae</span>";
@@ -41,13 +42,17 @@ typewriter = () => {
 }
 function fadeInNextItems() {
     fadeElement.innerHTML = nextMessage[0]; // Set the next message
-    fadeElement.style.opacity = 1; // Trigger the CSS transition
+    fadeElement.style.opacity = 1;
 
-    fadeButton1.style.opacity = 1;
-    fadeButton2.style.opacity = 1;
+    // fadeButton1.style.opacity = 1;
+    // fadeButton2.style.opacity = 1;
 
-    fadeButton1.style.pointerEvents = "auto";
-    fadeButton2.style.pointerEvents = "auto";
+    // fadeButton1.style.pointerEvents = "auto";
+    // fadeButton2.style.pointerEvents = "auto";
+    coverButtons.forEach((button) => {
+        button.style.opacity = 1;
+        button.style.pointerEvents = "auto";
+    });
 }
 window.addEventListener("load", typewriter);
 
@@ -72,3 +77,11 @@ function handleScrollColor(){
 }
 
 window.addEventListener('scroll', handleScrollColor);
+
+
+// Change page title when a button is clicked
+coverButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        document.title = `Visiting ${button.href}`;
+    });
+});
