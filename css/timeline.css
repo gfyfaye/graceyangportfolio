@@ -27,7 +27,18 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index: 3;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
+
+.timeline-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .timeline-marker {
     position: absolute;

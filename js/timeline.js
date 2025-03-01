@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
     const timelineItems = document.querySelectorAll(".timeline-item");
 
-    function revealTimelineItems() {
-        const triggerBottom = window.innerHeight * 0.9;
-        timelineItems.forEach((item) => {
-            const itemTop = item.getBoundingClientRect().top;
-            if (itemTop < triggerBottom) {
-                item.classList.add("show");
-            }
-        });
-    }
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.4 }
+    );
 
-    window.addEventListener("scroll", revealTimelineItems);
-    revealTimelineItems();
+    timelineItems.forEach((item) => observer.observe(item));
 });

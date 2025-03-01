@@ -15,7 +15,7 @@
 
 @keyframes appear {
     from {
-      transform: scale(0.7);
+      transform: scale(0.9);
     }
     to {
       transform: scale(1);
@@ -103,7 +103,7 @@
 
 @keyframes appearskills {
     from {
-      transform: scale(0.5);
+      transform: scale(0.9);
     }
     to {
       transform: scale(1);
@@ -138,8 +138,8 @@
 }
 
 .skill-icon {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;

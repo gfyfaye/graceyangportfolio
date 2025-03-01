@@ -66,7 +66,7 @@ const navbartexts = document.querySelectorAll('.navbartext');
 
 function handleScrollColor(){
     navbartexts.forEach(navbar => {
-        if (window.scrollY > 1600) {
+        if (window.scrollY > 1000) {
             navbar.classList.add('scrolled');
             //navbar.style.color = '#937DAF';
         } else {
