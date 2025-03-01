@@ -27,8 +27,7 @@ var textPosition = 0;
 var speed = 150;
 const typewriterElement = document.querySelector("#typewriter");
 const fadeElement = document.querySelector("#fadeElement");
-// const fadeButton1 = document.getElementById("GithubButton");
-// const fadeButton2 = document.getElementById("LinkedInButton");
+const blurbcontainer = document.querySelector(".blurbcontainer");
 const coverButtons = document.querySelectorAll(".coverbtn");
 
 typewriter = () => {
@@ -41,14 +40,15 @@ typewriter = () => {
     }
 }
 function fadeInNextItems() {
-    fadeElement.innerHTML = nextMessage[0]; // Set the next message
+    fadeElement.innerHTML = nextMessage[0];
     fadeElement.style.opacity = 1;
 
-    // fadeButton1.style.opacity = 1;
-    // fadeButton2.style.opacity = 1;
+    setTimeout(() => {
+        if (blurbcontainer) {
+            blurbcontainer.style.opacity = 1;
+        }
+    }, 500);
 
-    // fadeButton1.style.pointerEvents = "auto";
-    // fadeButton2.style.pointerEvents = "auto";
     coverButtons.forEach((button) => {
         button.style.opacity = 1;
         button.style.pointerEvents = "auto";

@@ -1,0 +1,248 @@
+/***GENERAL***/
+/****************************************************************************************************************/
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 4% auto;
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+
+/***NAVBAR***/
+/****************************************************************************************************************/
+
+
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 20px;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbartext {
+    color: #F8F5E9;
+}
+
+.navbartext:hover {
+    color: hsl(266, 40%, 31%);
+    
+}
+  /* Scrolled state */
+.navbartext.scrolled{
+    color: #937DAF;
+}
+
+/* Hover state for scrolled navbar */
+.navbartext.scrolled:hover {
+    color: hsl(266, 40%, 31%);
+}
+
+/***COVER***/
+/****************************************************************************************************************/
+
+
+#cover{
+    width: 100vw;
+    height: 110vh; 
+    background-image: url('../images/lavender/sky.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#cover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to bottom, transparent, white 100%);
+
+    z-index: 3;
+}
+
+.star{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.lavender{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#coverinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;}
+  
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+#typewriter {
+    transform: translate(-50%, -150%);
+    color: white;
+    font-size: 5em;
+    font-weight: bold;
+}
+#fadeElement {
+    transform: translate(-50%, -90%);
+    color: white;
+    font-size: 2.5em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    z-index: 3;
+    display: flex;
+    gap: 20px;
+}
+
+.coverbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.coverbtn:hover {
+    transform: scale(1.1);
+}
+
+
+/* blinking cursor */
+.blinking {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
+
+/***BLURB ON COVER***/
+/****************************************************************************************************************/
+
+.blurbcontainer {
+    position: absolute;
+    bottom: 15vh;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 700px;
+    z-index: 5;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#blurb {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: white;
+    text-align: left;
+    padding: 15px 20px;
+    line-height: 1.6;
+    max-width: 400px;
+
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    position: relative;
+}
+
+#blurb::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    
+    border-left: 10px solid rgba(255, 255, 255, 0.15);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.blurbcontainer img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
