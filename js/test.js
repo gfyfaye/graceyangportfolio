@@ -1,4 +1,3 @@
-
 //stars twinkling
 
 var stars = document.querySelectorAll('.star');
@@ -59,7 +58,7 @@ window.addEventListener("load", typewriter);
 
 const resumebutton = document.querySelector("#resume-button")
 function openResume() {
-    window.open('resume.pdf', '_blank');
+    window.open('graceyangresume.pdf', '_blank');
   }
 
 const navbartexts = document.querySelectorAll('.navbartext');

@@ -30,7 +30,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    width: 50%;
+    width: 60%;
     padding: 50px;
     gap: 40px;
     transition: opacity 1s, transform 1s;
@@ -47,6 +47,12 @@
     width: 100%;
     height: 530px;
     border-radius: 10px;
+}
+
+.project-image .small-image {
+    height: 350px;
+    width: auto;
+    object-fit: cover;
 }
 
 .project-content {
@@ -103,7 +109,7 @@
 
 @keyframes appearskills {
     from {
-      transform: scale(0.9);
+      transform: scale(0.8);
     }
     to {
       transform: scale(1);
@@ -177,7 +183,7 @@
 
 .resume-button:hover {
     background-color: #846D9E;
-    scale: 1.2;
+    scale: 1.1;
     
 }
 .resume-button:active {
