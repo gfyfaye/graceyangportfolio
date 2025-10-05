@@ -58,7 +58,7 @@ window.addEventListener("load", typewriter);
 
 const resumebutton = document.querySelector("#resume-button")
 function openResume() {
-    window.open('graceyangresume.pdf', '_blank');
+    window.open('gracefayeyangresume.pdf', '_blank');
   }
 
 const navbartexts = document.querySelectorAll('.navbartext');
